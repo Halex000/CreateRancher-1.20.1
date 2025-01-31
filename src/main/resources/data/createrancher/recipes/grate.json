@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createrancher:item_grate"
+    }
+  ],
+  "result": {
+    "item": "createrancher:test1",
+    "count": 9
+  }
+}

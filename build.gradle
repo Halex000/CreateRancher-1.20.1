@@ -127,12 +127,20 @@ repositories {
   }
   maven { url = 'https://maven.blamejared.com' }    
   maven { url = 'https://www.cursemaven.com'  }
+  maven {
+      name = 'tterrag maven'
+      url = 'https://maven.tterrag.com/'
+  }
 }
 
 dependencies {
 
 // implementation fg.deobf("blank:flib-1.20.1:${flib_version}")
     implementation fg.deobf("curse.maven:flib-661261:${flib_file}")
+
+    implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
+    implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
     // Specify the version of Minecraft to use.
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.

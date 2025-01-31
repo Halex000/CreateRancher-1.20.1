@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createrancher:block/grate_block"
+    }
+  }
+}
